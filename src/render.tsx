@@ -21,10 +21,17 @@ const ff = new FileforgeClient({
           type: "text/html",
         }),
         new File(
-          [fs.readFileSync(__dirname + "/images/fileforge_cover.png")],
-          "fileforge_cover.png",
+          [fs.readFileSync(__dirname + "/fonts/PPNeueMontreal-Medium.ttf")],
+          "PPNeueMontreal-Medium.ttf",
           {
-            type: "image/png",
+            type: "font/ttf",
+          }
+        ),
+        new File(
+          [fs.readFileSync(__dirname + "/fonts/PPNeueMontreal-Regular.ttf")],
+          "PPNeueMontreal-Regular.ttf",
+          {
+            type: "font/ttf",
           }
         ),
       ],
